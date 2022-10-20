@@ -37,10 +37,11 @@ model = pickle.load(open('model.pkl','rb'))
 
 st.header("Spam Email or SMS Detector")
 st.subheader("by, Md. Abdullah Al Fahad")
-st.text("For more interesting projects, visit my github --> https://github.com/FahadKhan007")
-st.text("Or, find me on linkedin --> https://www.linkedin.com/in/a-a-fahad/")
-st.text("For any further questions mail me at --> fahad.bauet@gmail.com")
-input_sms = st.text_area("Enter the message :")
+st.write("For more interesting projects please visit my --> [github account](https://github.com/FahadKhan007)")
+st.write("Or, find me on --> [linkedin](https://www.linkedin.com/in/a-a-fahad/)")
+st.write("For any further questions, mail me at --> [fahad.bauet@gmail.com](fahad.bauet@gmail.com)")
+
+input_sms = st.text_area("Enter the message from mail or SMS:")
 
 if st.button('Predict'):
 
