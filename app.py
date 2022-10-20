@@ -36,6 +36,8 @@ tfidf = pickle.load(open('vectorizer.pkl','rb'))
 model = pickle.load(open('model.pkl','rb'))
 
 st.title("Spam Email/SMS Detector")
+st.header("by Md. Abdullah Al Fahad")
+st.subheader("visit https://spam-mail-or-sms-detection.herokuapp.com/")
 
 input_sms = st.text_area("Enter the message")
 
