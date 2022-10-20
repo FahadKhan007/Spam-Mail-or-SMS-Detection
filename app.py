@@ -35,11 +35,12 @@ def transform_text(text):
 tfidf = pickle.load(open('vectorizer.pkl','rb'))
 model = pickle.load(open('model.pkl','rb'))
 
-st.title("Spam Email/SMS Detector")
-st.header("by Md. Abdullah Al Fahad")
-st.subheader("visit https://spam-mail-or-sms-detection.herokuapp.com/")
-
-input_sms = st.text_area("Enter the message")
+st.header("Spam Email or SMS Detector")
+st.subheader("by, Md. Abdullah Al Fahad")
+st.text("For more interesting projects, visit my github --> https://github.com/FahadKhan007")
+st.text("Or, find me on linkedin --> https://www.linkedin.com/in/a-a-fahad/")
+st.text("For any further questions mail me at --> fahad.bauet@gmail.com")
+input_sms = st.text_area("Enter the message :")
 
 if st.button('Predict'):
 
@@ -51,6 +52,6 @@ if st.button('Predict'):
     result = model.predict(vector_input)[0]
     # 4. Display
     if result == 1:
-        st.header("Spam")
+        st.subheader("Spam")
     else:
-        st.header("Not Spam")
+        st.subheader("Not Spam")
