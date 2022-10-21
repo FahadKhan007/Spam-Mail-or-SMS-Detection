@@ -24,7 +24,7 @@ Visit this site to see project demo https://spam-mail-or-sms-detection.herokuapp
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/FahadKhan007/Spam-Mail-or-SMS-Detection/blob/main/LICENSE)
 
 
 ## Run Locally
